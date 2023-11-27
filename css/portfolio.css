@@ -1,0 +1,189 @@
+h2[data-tool-tip] {
+  position: relative;
+}
+h2[data-tool-tip]::before {
+  content: attr(data-tool-tip);
+  color: yellow;
+  background-color: #12283a;
+  padding: 0.2rem;
+  display: block;
+  position: absolute;
+  font-size: 1rem;
+  bottom: 100%;
+  left: -1rem;
+}
+
+.port-main-bg {
+  background-color: var(--gw-000);
+}
+
+.portfolio-wrapper {
+  margin: 0 auto 0 auto;
+  padding: 0 3.2rem 0 3.2rem;
+  max-width: 102.4rem;
+}
+
+.header-background {
+  /* z-index: 2;
+  position: sticky; */
+  height: 13rem;
+  top: 0;
+  background: radial-gradient(
+    75% 130% at 80% 75%,
+    rgb(23, 63, 95) 15%,
+    #12283a 100%
+  );
+  box-shadow: 0 0.2rem 0.5rem #12283a15;
+  padding-bottom: 0.5rem;
+}
+
+.port-grid {
+  display: grid;
+  column-gap: 2.4rem;
+  row-gap: 3.2rem;
+}
+
+.port-heading {
+  grid: auto auto auto / 3fr 1fr;
+  margin-bottom: 5rem;
+}
+
+.--1square-text-left {
+  grid-template-columns: 1fr 2fr;
+  padding: 12.8rem 3.2rem;
+  gap: 4.8rem;
+}
+
+.--1square-text-right {
+  grid: auto / 2fr 1fr;
+  gap: 4.8rem;
+}
+
+.--4square {
+  grid: 1fr 1fr / 1fr 1fr;
+}
+
+/* Neat CSS trick, this makes anything with "port-" in the name take on the properties within the brackets
+[class*="port-"] {
+  color: redwashere;
+  background-color: redwashere;
+} */
+
+.bg-extender {
+  background: radial-gradient(
+    75% 130% at 80% 75%,
+    rgb(23, 63, 95) 15%,
+    #12283a 100%
+  );
+  --bg-image: url("/img/portfolio/cranimals/cranimals-bg-light-3.svg");
+  --bg-image-opacity: 0.04;
+  position: relative;
+  isolation: isolate;
+
+  padding: 12.8rem 0;
+}
+
+.bg-extender::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  opacity: var(--bg-image-opacity);
+
+  background-image: var(--bg-image);
+  background-size: 60%;
+  background-position: top 20rem right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.case-title {
+  grid-column: 1 / span 2;
+}
+.case-info {
+  margin-top: 2.4rem;
+}
+.case-role {
+  /* z-index: 0; */
+  background: radial-gradient(
+    75% 130% at 80% 75%,
+    rgb(23, 63, 95) 15%,
+    #12283a 100%
+  );
+  padding: 2rem 2rem 4.5rem 3.2rem;
+  /* border: 0.2rem solid #4293d7; */
+  margin: 2rem 0 4rem 0;
+  border-radius: 1.6rem;
+  box-shadow: 0 0.3rem 0.5rem #12283a10;
+}
+.case-divider {
+  grid-column: 1 / span 2;
+}
+
+.port-header-image {
+  width: 100%;
+  border-radius: 1.6rem;
+}
+
+.port-image {
+  /* position: relative; */
+  /* overflow: hidden; */
+  border-radius: 0.8rem;
+  box-shadow: 0 0.3rem 0.5rem #12283a10;
+  overflow: hidden;
+}
+
+.port-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Port Text Stylings */
+
+.port-title {
+  font-size: 6.4rem;
+  font-weight: 400;
+  text-transform: none;
+  color: var(--gw-800);
+  text-align: center;
+  margin: 10rem 0 5rem 0;
+}
+
+.port-title span {
+  color: var(--gw-600);
+}
+
+.port-sub-title {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: var(--gw-600);
+  text-align: left;
+  line-height: 1.2;
+  margin-bottom: 1.2rem;
+}
+
+.port-body-text {
+  font-weight: 400;
+  font-size: 1.8rem;
+  color: var(--gw-900);
+  margin-bottom: 3.2rem;
+}
+
+.port-sidebar-title {
+  color: var(--gw-500);
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1.2rem 0 1.2rem 0;
+}
+
+.port-sidebar-list {
+  /* margin: 1.8rem 0 0 1.8rem; */
+  list-style: disc inside none;
+  color: var(--gw-000);
+  font-size: 1.4rem;
+}
+
+.port-text-on-dark {
+  color: var(--gw-000);
+}

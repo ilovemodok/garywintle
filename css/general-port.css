@@ -1,0 +1,186 @@
+/* -Spacing System (px)
+
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* @font-face {
+  font-family: "Poppins", "Verdana", sans-serif;
+  font-weight: 400;
+  src: url("https://garywintle.com/assets/fonts/poppins-regular-webfont.woff2")
+      format("woff2"),
+    url("https://garywintle.com/assets/fonts/poppins-regular-webfont.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins", "Verdana", sans-serif;
+  font-weight: 500;
+  src: url("https://garywintle.com/assets/fonts/poppins-medium-webfont.woff2")
+      format("woff2"),
+    url("https://garywintle.com/assets/fonts/poppins-medium-webfont.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins", "Verdana", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  src: url("https://garywintle.com/assets/fonts/poppins-mediumitalic-webfont.woff2")
+      format("woff2"),
+    url("https://garywintle.com/assets/fonts/poppins-mediumitalic-webfont.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins", "Verdana", sans-serif;
+  font-weight: 600;
+  src: url("https://garywintle.com/assets/fonts/poppins-semibold-webfont.woff2")
+      format("woff2"),
+    url("https://garywintle.com/assets/fonts/poppins-semibold-webfont.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins", "Verdana", sans-serif;
+  font-weight: 700;
+  src: url("https://garywintle.com/assets/fonts/poppins-bold-webfont.woff2")
+      format("woff2"),
+    url("https://garywintle.com/assets/fonts/poppins-bold-webfont.woff")
+      format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins", "Verdana", sans-serif;
+  font-weight: 900;
+  src: url("https://garywintle.com/assets/fonts/poppins-black-webfont.woff2")
+      format("woff2"),
+    url("https://garywintle.com/assets/fonts/poppins-black-webfont.woff")
+      format("woff");
+  font-display: swap;
+} */
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --gw-000: #fcfdfd;
+  --gw-400: #ddeefc;
+  --gw-500: #72b1e4;
+  --gw-600: #4293d7;
+  --gw-700: #20639b;
+  --gw-800: #173f5f;
+  --gw-900: #12283a;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 170%;
+  font-weight: 400;
+  background-color: var(--gw-000);
+  /* width: 110.6rem; */
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+/*******************************/
+/* GENERAL REUSABLE COMPONENTS */
+/*******************************/
+
+a {
+  color: var(--gw-700);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 120%;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  color: var(--gw-000);
+  margin-bottom: 2.4rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 7.2rem;
+  text-align: center;
+  color: var(--gw-800);
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+.header-underline {
+  display: block;
+  margin: 0.8rem auto 4.8rem auto;
+  opacity: 0.9;
+}
+
+.flipped {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.section-body-text {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 170%;
+  color: var(--gw-900);
+  text-align: center;
+  margin: 0 auto 0 auto;
+  max-width: 75%;
+}
+
+.gradient-text {
+  background: linear-gradient(125deg, #72b1e4 -7%, #fcfdfd 23%, #72b1e4 53%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  display: inline-block;
+  color: rgba(0, 0, 0, 0);
+  background-attachment: fixed;
+}
+
+.drop-shadow {
+  box-shadow: 0 0.2rem 0.4rem #12283a30;
+}
+
+.section-container {
+  margin: 0 auto 0 auto;
+  max-width: 130rem;
+  padding: 0 3.2rem;
+}
+
+.section-titletext-container {
+  margin: 25.6rem 0 12.8rem 0;
+}
+
+.short-top-text-container {
+  margin-top: 20.8rem;
+}
+
+.small-flex-space {
+  display: flex;
+  gap: 0.8rem;
+}

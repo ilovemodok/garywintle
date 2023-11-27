@@ -1,0 +1,6 @@
+{
+  "icons": [
+    { "src": "img/icon-files/gwxandroid-192.png", "sizes": "192x192" },
+    { "src": "img/icon-files/gwxandroid-512.png", "sizes": "512x512" }
+  ]
+}
