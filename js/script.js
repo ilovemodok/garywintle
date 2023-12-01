@@ -55,46 +55,6 @@ allLinks.forEach(function (link) {
   });
 });
 
-//Lightbox
-
-const lightbox = document.createElement("div");
-lightbox.id = "lightbox";
-document.body.appendChild(lightbox);
-
-const imageFolder = "/img/portfolioart"; // Path to image folder
-const imageFiles = [
-  "cranimals.webp",
-  "surfinburrito.webp",
-  "potheadbooks.webp",
-  "rakuten.webp",
-  "bumblebee.webp",
-  "dankarson.webp",
-]; // Array of image filenames
-
-const images = document.querySelectorAll(".portfolio-link");
-images.forEach((image, index) => {
-  image.addEventListener("click", (e) => {
-    lightbox.classList.add("active");
-
-    const imagePath = `${imageFolder}/${imageFiles[index]}`;
-
-    const img = document.createElement("img");
-    img.src = imagePath;
-    img.classList.add("lightbox-image");
-
-    while (lightbox.firstChild) {
-      lightbox.removeChild(lightbox.firstChild);
-    }
-
-    lightbox.appendChild(img);
-  });
-});
-
-lightbox.addEventListener("click", (e) => {
-  if (e.target !== e.currentTarget) return;
-  lightbox.classList.remove("active");
-});
-
 // Button Rollovers
 
 const container = document.querySelector(".svg-rollover");
