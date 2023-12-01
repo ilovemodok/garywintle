@@ -467,7 +467,7 @@ Instead, 1rem = 1em = 16px*/
   .main-nav-link.nav-cta,
   .main-nav-link.nav-cta:link,
   .main-nav-link.nav-cta:visited {
-    padding: 3.2rem 6.4rem;
+    padding: 2rem 4.8rem;
     border-radius: 6.4rem;
     margin: -3.2rem 0 0 0;
   }
