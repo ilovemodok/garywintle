@@ -19,15 +19,12 @@ allLinks.forEach(function (link) {
     const href = link.getAttribute("href");
 
     // Allow mailto links to open the email client
-    if (href && href.startsWith("mailto:")) {
-      return;
-    }
 
-    if (href && href.startsWith("https://")) {
-      return;
-    }
-
-    if (href && href.startsWith("/cranimals")) {
+    if (
+      (href && href.startsWith("mailto:")) ||
+      (href && href.startsWith("https://")) ||
+      (href && href.startsWith("/cranimals"))
+    ) {
       return;
     }
 
