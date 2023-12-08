@@ -12,7 +12,8 @@ btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
 });
 
-const allLinks = document.querySelectorAll("a:link");
+const allLinks = document.querySelectorAll("nav a");
+// const allLinks = document.querySelectorAll("a:link");
 
 allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
@@ -20,13 +21,13 @@ allLinks.forEach(function (link) {
 
     // Allow mailto links to open the email client
 
-    if (
-      (href && href.startsWith("mailto:")) ||
-      (href && href.startsWith("https://")) ||
-      (href && href.startsWith("/cranimals"))
-    ) {
-      return;
-    }
+    // if (
+    //   (href && href.startsWith("mailto:")) ||
+    //   (href && href.startsWith("https://")) ||
+    //   (href && href.startsWith("/cranimals"))
+    // ) {
+    //   return;
+    // }
 
     // Prevent default behavior for other links
     e.preventDefault();
