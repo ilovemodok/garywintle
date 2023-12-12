@@ -19,17 +19,6 @@ allLinks.forEach(function (link) {
   link.addEventListener("click", function (e) {
     const href = link.getAttribute("href");
 
-    // Allow mailto links to open the email client
-
-    // if (
-    //   (href && href.startsWith("mailto:")) ||
-    //   (href && href.startsWith("https://")) ||
-    //   (href && href.startsWith("/cranimals"))
-    // ) {
-    //   return;
-    // }
-
-    // Prevent default behavior for other links
     e.preventDefault();
 
     // Scroll back to top
@@ -80,99 +69,4 @@ window.addEventListener("scroll", () => {
     // backToTop.style.visibility = "hidden";
     scrollToTopButton.style.opacity = 0;
   }
-});
-
-// Lottie Pencil Animate on Scroll
-
-// Initialize Lottie animation
-// const animation = lottie.loadAnimation({
-//   container: document.getElementById("#lottie-pencil"),
-//   renderer: "svg",
-//   loop: true,
-//   autoplay: true,
-//   path: "/img/lottie/gwhero-test-04.json", // Replace with your animation file
-// });
-
-// // Set up the ScrollTrigger
-// gsap.registerPlugin(ScrollTrigger);
-
-// const animationTimeline = gsap.timeline({
-//   scrollTrigger: {
-//     trigger: "#pencil-anim",
-//     start: "top top", // Adjust as needed
-//     end: "bottom bottom", // Adjust as needed
-//     scrub: true, // Smooth animation
-//   },
-// });
-
-// animationTimeline.to(animation, {
-//   frame: animation.totalFrames, // Animate throughout the entire timeline
-//   ease: "none", // Linear animation
-// });
-
-// gsap.from(".hero-image-box", {
-//   duration: 1,
-//   y: "-100vw",
-//   ease: "back.out(1.7)",
-//   delay: 0,
-// });
-
-gsap.to(".mediamite-img", {
-  duration: 6,
-  ease: "bounce.out",
-  delay: 1,
-  stagger: 0.5,
-  scrollTrigger: ".",
-});
-
-// gsap.fromTo(
-//   ".mediamite-img",
-//   {
-//     duration: 0.3,
-//     // opacity: 0,
-//     // ease: "power1.in",
-//     delay: 0.1,
-//     stagger: 0.5,
-//     y: "-100vh",
-//     ease: "elastic",
-//     rotation: 45,
-//     scale: 3,
-//   },
-//   {
-//     duration: 1,
-//     // opacity: 0,
-//     // ease: "power1.in",
-//     delay: 0.1,
-//     stagger: 0.5,
-//     y: "0",
-//     ease: "back.out(1.7)",
-//     rotation: 720,
-//     scale: 1,
-//   }
-// );
-
-// const timeline = gsap.timeline();
-
-// gsap.from(".port-header-image", {
-//   duration: 3,
-//   y: "10rem",
-//   stagger: 0.5,
-//   ease: "back.out(1.7)",
-// });
-
-// gsap.registerPlugin(ScrollTrigger);
-
-gsap.from(".main-nav-link", {
-  duration: 3,
-  y: "10rem",
-  stagger: 0.5,
-  ease: "back.out(1.7)",
-  scrollTrigger: ".",
-});
-
-gsap.from(".hero-image-box", {
-  duration: 1,
-  y: "-100vw",
-  ease: "back.out(1.7)",
-  delay: 0,
 });
