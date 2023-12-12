@@ -106,7 +106,7 @@ a {
 } */
 
 .gradient-text {
-  background: linear-gradient(125deg, #72b1e4 -7%, #fcfdfd 23%, #72b1e4 53%);
+  background: linear-gradient(140deg, #a8d2f4 -7%, #fcfdfd 33%, #a8d2f4 40%);
   background-clip: text;
   -webkit-background-clip: text;
   display: inline-block;

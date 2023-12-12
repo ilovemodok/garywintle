@@ -174,7 +174,7 @@
   font-weight: 500;
   font-size: 2rem;
   line-height: 160%;
-  margin-bottom: 8rem;
+  margin-bottom: 10rem;
   color: var(--gw-400);
 }
 
@@ -436,7 +436,8 @@ a:hover div {
   width: 100%;
   padding-bottom: 100%;
   background: linear-gradient(165deg, #4293d7 12%, #72b1e4 65%, #4293d7 83%);
-  box-shadow: 0 0.3rem 0.5rem #12283a13;
+  box-shadow: 20px 1rem 4rem 4px #12283a0d;
+  /* box-shadow: 0 0.3rem 0.5rem #12283a13; */
   z-index: -1;
 }
 
