@@ -64,6 +64,7 @@
 
     <!-- General Javascript -->
     <script defer src="/js/script.js"></script>
+    <script defer src="/js/gsap.js"></script>
 
     <!-- Mobile Icons -->
     <link rel="icon" href="/img/favicon-02.svg" type="image/svg" />
@@ -78,15 +79,7 @@
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-SYW4K7FFS6"
   ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-SYW4K7FFS6");
-  </script>
+  <script defer src="/js/googleanalytics.js"></script>
 
   <body>
     <!-- *****HEADER***** -->
@@ -180,8 +173,14 @@
               speed="1"
               loop
               autoplay
-              alt="Animation of an illustrated Gary Wintle floating among design-related things"
-            ></dotlottie-player>
+              <!--
+              width="130"
+              height="130"
+              --
+            >
+              alt="Animation of an illustrated Gary Wintle floating among
+              design-related things" ></dotlottie-player
+            >
           </div>
         </div>
       </section>
@@ -389,7 +388,7 @@
       <div class="portfolio-grid">
         <!-- Portfolio / Cranimals -->
 
-        <a class="portfolio-link" href="/cranimals.html"
+        <a class="portfolio-link" href="/portfolio/cranimals.html"
           ><div class="portfolio-card">
             <picture>
               <source

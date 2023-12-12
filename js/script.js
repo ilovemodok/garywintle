@@ -67,6 +67,5 @@ window.addEventListener("scroll", () => {
     // navBar.style.opacity = 0;
     backToTop.style.opacity = 0;
     // backToTop.style.visibility = "hidden";
-    scrollToTopButton.style.opacity = 0;
   }
 });

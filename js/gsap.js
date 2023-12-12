@@ -36,7 +36,7 @@ gsap.from(".mediamite-img", {
 
 gsap.from(".gw-lottie", {
   opacity: 0,
-  duration: 1,
+  duration: 0.3,
   ease: "power1.out",
 });
 

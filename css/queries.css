@@ -41,6 +41,10 @@ Instead, 1rem = 1em = 16px*/
     padding: 0 0 0 4.8rem;
   }
 
+  .hero-image-box {
+    height: 100%;
+  }
+
   /* services */
 
   .services-group {
