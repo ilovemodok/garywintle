@@ -1,17 +1,8 @@
-h2[data-tool-tip] {
-  position: relative;
-}
-h2[data-tool-tip]::before {
-  content: attr(data-tool-tip);
-  color: yellow;
-  background-color: #12283a;
-  padding: 0.2rem;
-  display: block;
-  position: absolute;
-  font-size: 1rem;
-  bottom: 100%;
-  left: -1rem;
-}
+/* .hidden {
+  display: none;
+} */
+
+/* General */
 
 .port-main-bg {
   background-color: var(--gw-000);
@@ -23,10 +14,18 @@ h2[data-tool-tip]::before {
   max-width: 102.4rem;
 }
 
+.port-grid {
+  display: grid;
+  column-gap: 2.4rem;
+  row-gap: 3.2rem;
+}
+
+/* Nav */
+
 .header-background {
   /* z-index: 2;
   position: sticky; */
-  height: 13rem;
+  height: 11rem;
   top: 0;
   background: radial-gradient(
     75% 130% at 80% 75%,
@@ -37,11 +36,7 @@ h2[data-tool-tip]::before {
   padding-bottom: 0.5rem;
 }
 
-.port-grid {
-  display: grid;
-  column-gap: 2.4rem;
-  row-gap: 3.2rem;
-}
+/* Header */
 
 .port-heading {
   grid: auto auto auto / 3fr 1fr;
@@ -59,8 +54,22 @@ h2[data-tool-tip]::before {
   gap: 4.8rem;
 }
 
+.--2square {
+  grid: 1fr / 1fr;
+}
+
 .--4square {
   grid: 1fr 1fr / 1fr 1fr;
+}
+
+.--text-top {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.--grid-span {
+  grid-column: 1 / -1;
+  height: auto;
 }
 
 /* Neat CSS trick, this makes anything with "port-" in the name take on the properties within the brackets
@@ -123,6 +132,7 @@ h2[data-tool-tip]::before {
 .port-header-image {
   width: 100%;
   border-radius: 1.6rem;
+  transition: border-radius 0.5s ease-in-out;
 }
 
 .port-image {
@@ -160,14 +170,18 @@ h2[data-tool-tip]::before {
   color: var(--gw-600);
   text-align: left;
   line-height: 1.2;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.--title-on-dark {
+  color: var(--gw-500);
 }
 
 .port-body-text {
   font-weight: 400;
   font-size: 1.8rem;
   color: var(--gw-900);
-  margin-bottom: 3.2rem;
+  margin-bottom: 1.2rem;
 }
 
 .port-sidebar-title {
@@ -184,6 +198,71 @@ h2[data-tool-tip]::before {
   font-size: 1.4rem;
 }
 
+/* Extra Modifiers */
+
 .port-text-on-dark {
   color: var(--gw-000);
 }
+
+.--section-break {
+  margin-bottom: 3.2rem;
+}
+
+.--top-bottom-padding {
+  padding: 12rem 0;
+}
+
+.poop {
+  border-radius: 10rem;
+}
+
+/* Lightbox */
+/* .lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #12283acc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 1.5rem;
+}
+
+.lightbox__inner {
+  position: relative;
+  width: 100%;
+  max-width: 80rem;
+  min-height: 10rem;
+  background: white;
+  box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.35);
+}
+
+.lightbox__close {
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: var(--gw-800);
+}
+
+.lightbox__close:hover {
+  background: none;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 1rem;
+  font-size: 4rem;
+  cursor: pointer;
+  color: var(--gw-600);
+  transition: 300ms;
+} */

@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/portfolio.css" />
     <link rel="stylesheet" href="/css/queries.css" />
-
+    <link href="/lightbox/css/lightbox.css" rel="stylesheet" />
     <!-- Lottie -->
     <script src="https://unpkg.com/@lottiefiles/lottie-interactivity@latest/dist/lottie-interactivity.min.js"></script>
 
@@ -43,7 +43,7 @@
 
     <!-- GSap -->
 
-    <script
+    <!-- <script
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
     ></script>
@@ -51,10 +51,11 @@
       defer
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>-->
 
     <script defer src="/js/script.js"></script>
-    <script defer src="/js/gsap.js"></script>
+    <!-- <script type="module" src="../main.js"></script> -->
+    <!-- <script defer src="/js/gsap.js"></script> -->
 
     <title>Gary Wintle: Cranimals</title>
 
@@ -134,12 +135,16 @@
     </div>
 
     <!-- START OF CONTENT -->
+
     <!-- Heading -->
 
     <section class="port-grid port-heading portfolio-wrapper">
       <div class="case-title">
-        <h1 class="port-title">Cranimals: <span>Designing Charlie</span></h1>
+        <h1 class="port-title" id="logo-button">
+          Cranimals: <span>Designing Charlie</span>
+        </h1>
         <img
+          id="cranJSHeader"
           class="port-header-image"
           alt="Cranimals Zen Dogfood Image"
           src="/img/portfolio/cranimals/Cranimals-header@2x.webp"
@@ -147,12 +152,12 @@
       </div>
       <div class="case-info">
         <h2 class="port-sub-title" data-tool-tip=": Hey Suckah">The Client</h2>
-        <p class="port-body-text">
+        <p class="port-body-text --section-break">
           Cranimals is an American dogfood distributor that specializes in
           healthy, vegan dog treats.
         </p>
         <h2 class="port-sub-title">The Challenge</h2>
-        <p class="port-body-text">
+        <p id="cranJSText" class="port-body-text --section-break">
           I was contacted by Cranimals to come up with a new character, codename
           “Charlie” and package design for new line of “Zendog” dog treats.
         </p>
@@ -178,10 +183,13 @@
       <section class="port-grid --1square-text-right portfolio-wrapper">
         <div class="port-grid --4square">
           <div class="port-image">
-            <img
-              alt="Cranimals Zen Dogfood Early Sketch"
-              src="/img/portfolio/cranimals/cranimals-sketch-01.webp"
-            />
+            <a
+              href="/img/portfolio/cranimals/cranimals-sketch-01.webp"
+              data-lightbox="image-1"
+              ><img
+                alt="Cranimals Zen Dogfood Early Sketch"
+                src="/img/portfolio/cranimals/cranimals-sketch-01.webp"
+            /></a>
           </div>
           <div class="port-image">
             <img
@@ -203,12 +211,13 @@
           </div>
         </div>
         <div class="case-info">
-          <h2 class="port-sub-title">Initial Sketches</h2>
+          <h2 class="port-sub-title --title-on-dark">Initial Sketches</h2>
           <p class="port-body-text port-text-on-dark">
-            I went to work right with zen thoughts in mind. I wanted to come up
-            with something that mixed cute doggy character packaging we often
-            see in the aisles with something a little serene and worthy of the
-            ZenDog title
+            I went to work right with zen thoughts in mind.
+          </p>
+          <p class="port-body-text port-text-on-dark">
+            Mixing cute doggy character packaging we often see in the aisles
+            with something a little serene seemed like the best path to take.
           </p>
         </div>
       </section>
@@ -217,15 +226,18 @@
     <!-- final Sketches -->
     <section class="port-grid --1square-text-left portfolio-wrapper">
       <div class="case-info">
-        <h2 class="port-sub-title">Narrowing down and finetuning from there</h2>
+        <h2 class="port-sub-title">Finalizing the Look</h2>
         <p class="port-body-text">
-          After some chats with the client over the sketches I’d sent them, we
-          decided on which parts of which sketches were what they wanted in
-          their final character design. They also decided that Charlie should be
-          sitting on a giant pumpkin surrounded by cranberries since those were
-          both key ingredients to their vegan dog food. I was happy to customize
-          the art to their liking. It’s really a fun thing to see a client view
-          something they helped to create for the first time.
+          We decided on which parts of which sketches were what they wanted in
+          their final character design.
+        </p>
+        <p class="port-body-text">
+          They added that they'd like Charlie sitting on a giant pumpkin
+          surrounded by cranberries since those were both key ingredients to
+          their vegan dog food.
+        </p>
+        <p class="port-body-text">
+          I was happy to customize the art to their liking!
         </p>
       </div>
       <div class="port-image">
@@ -246,7 +258,7 @@
           />
         </div>
         <div class="case-info">
-          <h2 class="port-sub-title">Finalizing the</h2>
+          <h2 class="port-sub-title --title-on-dark">Finalizing the</h2>
           <p class="port-body-text port-text-on-dark">
             With the final pencils approved, I went to work on vectoring and
             coloring the art in Adobe Illustrator. It was a bit of a challenge
@@ -259,9 +271,11 @@
       </section>
     </div>
 
-    <!-- final Sketches -->
-    <section class="port-grid --1square-text-left portfolio-wrapper">
-      <div class="case-info">
+    <!-- Results -->
+    <section
+      class="port-grid portfolio-wrapper --text-top --top-bottom-padding"
+    >
+      <div class="case-info --grid-span">
         <h2 class="port-sub-title">Pack it in a doggy bag</h2>
         <p class="port-body-text">
           Upon final approval, the packaging was set up and printed. The results
@@ -276,7 +290,13 @@
       <div class="port-image">
         <img
           alt="Cranimals Zen Dogfood Image"
-          src="/img/portfolio/cranimals/cranimals-finalsketch.webp"
+          src="/img/portfolio/cranimals/craminals-packaging.webp"
+        />
+      </div>
+      <div class="port-image">
+        <img
+          alt="Cranimals Zen Dogfood Image"
+          src="/img/portfolio/cranimals/monica_mads.webp"
         />
       </div>
     </section>
@@ -290,5 +310,6 @@
         designed, animated, and coded by hand. All rights reserved.</span
       >
     </footer>
+    <script src="/lightbox/js/lightbox-plus-jquery.js"></script>
   </body>
 </html>

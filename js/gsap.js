@@ -8,16 +8,8 @@ gsap.from(".port-image", {
   scrollTrigger: ".port-image",
 });
 
-// gsap.from(".main-nav-link", {
-//   duration: 3,
-//   y: "10rem",
-//   stagger: 0.5,
-//   ease: "back.out(1.7)",
-//   scrollTrigger: ".",
-// });
-
 gsap.from(".mediamite-img", {
-  delay: 0,
+  delay: 0.3,
   duration: 1,
   ease: "power1.out",
   y: "100vw",
@@ -39,22 +31,3 @@ gsap.from(".gw-lottie", {
   duration: 0.3,
   ease: "power1.out",
 });
-
-// gsap.to(".main-logo", {
-//   duration: 30,
-//   motionPath: {
-//     path: "#motion-path",
-//     autoRotate: true,
-//     // start: 0.1,
-//     // end: 1.2,
-//   },
-//   xPercent: -50,
-//   yPercent: -50,
-//   transformOrigin: "50% 50%",
-//   // scrollTrigger: {
-//   //   scrub: 0.5,
-//   //   trigger: "#link-services",
-//   //   start: "top 80%",
-//   //   end: "top 30%",
-//   // },
-// });

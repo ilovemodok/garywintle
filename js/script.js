@@ -69,3 +69,9 @@ window.addEventListener("scroll", () => {
     // backToTop.style.visibility = "hidden";
   }
 });
+
+// Lightbox Activator
+
+import lightbox from "/js/lightbox.js";
+
+lightbox.activate();

@@ -428,14 +428,17 @@ a:hover div {
 .about-me-selfie-container {
   position: relative;
   rotate: -6deg;
+  /* transform: rotate(-6deg); */
 }
 
 .about-me-selfie-container::before {
   content: "";
   display: block;
-  border-radius: 1.8rem;
+  border-radius: 1.9rem;
   position: absolute;
-  translate: 1.5rem 1.5rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-47%, -63%);
   width: 100%;
   padding-bottom: 100%;
   background: linear-gradient(165deg, #4293d7 12%, #72b1e4 65%, #4293d7 83%);
